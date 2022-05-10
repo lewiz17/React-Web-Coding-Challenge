@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body *{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+h2,h3,h4,h5{
+  padding: 0;
+  margin: 0;
+}
+p{
+  padding: 0;
+  margin: 0;
+}
+.hold-paginate{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+}
+.hold-paginate li.selected a{
+  background-color: #666;
+}
+.hold-paginate li.previous a, .hold-paginate li.next a{
+  background-color: transparent;
+  color: #666;
+}
+.hold-paginate li.previous.disabled a, .hold-paginate li.next.disabled a{
+  color: #bdbdbd;
+}
+.hold-paginate a{
+  cursor: pointer;
+  background-color: #0096bb;
+  padding: 8px 1em;
+  border-radius: 5px;
+  color: #fff;
+}
