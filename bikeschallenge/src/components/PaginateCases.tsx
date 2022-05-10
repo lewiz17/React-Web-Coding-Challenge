@@ -23,7 +23,7 @@ const PaginateCases = ({
 	const handlePageClick = (event: { selected: number; }) => {
 		const newOffset = (event.selected * items) % bikes.length;
 		setItemOffset(newOffset);
-		window.scrollTo(0, 0);
+		window.scrollTo(0, 200);
 	};
 
 	return (
